@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cipher Encryption and Converter</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+</head>
+
+<body>
+    <form action="index.html" method="POST">
+        <div>
+            <h2>Encryption</h2>
+            <label for="input"> Original String: </label>
+            <hr>
+            <input type="text" id="input" name="input">
+            <hr>
+
+            <button type="button" id="encryptBtn" onclick="encrypt(this.input);">Encrypt </button>
+            <hr>
+
+            <label for="outputAES"> AES Encrypted: </label>
+            <output id="outputAES" name="outputAES"></output>
+            <hr>
+            <label for="outputSHA1"> SHA1 Encrypted: </label>
+            <output id="outputSHA1" name="outputSHA1"></output>
+            <hr>
+            <label for="outputSHA224"> SHA224 Encrypted: </label>
+            <output id="outputSHA224" name="outputSHA224"></output>
+            <hr>
+            <label for="outputSHA256"> SHA256 Encrypted: </label>
+            <output id="outputSHA256" name="outputSHA256"></output>
+            <hr>
+
+            <h2>Converter</h2>
+            <label for= "inputC"> Binary or Decimal: </label>
+            <hr>
+            <input type="text" id="inputC" name="inputC">
+            <hr>
+            <button type="button" id="toBbtn" onclick="convertB(this.inputC);">Convert to Decimal </button>
+            <button type="button" id="toDbtn" onclick="convertD(this.inputC);">Convert to Binary </button>
+            <hr>
+
+            <label for="output"> Converter: </label>
+            <output id="output" name="output"></output>
+            <hr>
+
+        </div>
+    </form>
+
+    <script src = "script.js"></script>
+
+
+</body>
+
+</html>

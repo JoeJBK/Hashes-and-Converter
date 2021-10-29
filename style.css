@@ -1,0 +1,15 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(css/RobotoCondensed-Bold.ttf);
+}
+
+hr{
+    border: none;
+  }
+
+body {
+    text-align: left;
+    font-size: 120%;
+    border-radius: 5px;
+    font-family: myFirstFont;
+}
